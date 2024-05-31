@@ -11,9 +11,9 @@ Availability zones are physically separate datacenters within an Azure region. E
 
 ![Region](../Pictures/Region.png)
 
-**Zonal services:** You pin the resource to a specific zone (for example, VMs, managed disks, IP addresses).
-**Zone-redundant services:** The platform replicates automatically across zones (for example, zone-redundant storage, SQL Database).
-**Non-regional services:** Services are always available from Azure geographies and are resilient to zone-wide outages as well as region-wide outages.
+Zonal services: You pin the resource to a specific zone (for example, VMs, managed disks, IP addresses).
+Zone-redundant services: The platform replicates automatically across zones (for example, zone-redundant storage, SQL Database).
+Non-regional services: Services are always available from Azure geographies and are resilient to zone-wide outages as well as region-wide outages.
 
 ### Additional advantages of region pairs:
 - If an extensive Azure outage occurs, one region out of every pair is prioritized to make sure at least one is restored as quickly as possible for applications hosted in that region pair.

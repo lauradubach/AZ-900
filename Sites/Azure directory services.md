@@ -1,6 +1,3 @@
-
-![image](image.png)
-
 # Azure Directory Services Overview
  
 ### Microsoft Entra ID:
@@ -130,43 +127,31 @@ Microsoft Entra External ID offers a flexible and secure way to manage interacti
 # Azure Conditional Access Overview
  
 ### What is Conditional Access?
-- Conditional Access is a security tool in Microsoft Entra ID that controls access to resources based on identity signals such as user identity, location, and device.
+Conditional Access is a security tool in Microsoft Entra ID that controls access to resources based on identity signals such as user identity, location, and device.
  
-#### Key Functions:
-1. Empower User Productivity:
-   - Allows users to work from anywhere at any time.
-   
-2. Protect Organizational Assets:
-   - Ensures that access to resources is secure by evaluating various signals.
+### Key Functions:
+- Empower User Productivity: Allows users to work from anywhere at any time.
+- Protect Organizational Assets: Ensures that access to resources is secure by evaluating various signals.
  
 ### How Conditional Access Works:
-1. Signal Collection:
-   - During sign-in, signals such as the user’s location, device, and the application being accessed are collected.
-   
-2. Decision Making:
-   - Based on the collected signals, a decision is made whether to allow access, deny access, or require multifactor authentication (MFA).
-   - Example decisions:
+- Signal Collection: During sign-in, signals such as the user’s location, device, and the application being accessed are collected.
+- Decision Making: Based on the collected signals, a decision is made whether to allow access, deny access, or require multifactor authentication (MFA).
+Example decisions:
      - Full access if the user is signing in from a usual location.
      - Block access or require MFA if the user is signing in from an unusual or high-risk location.
- 
-3. Enforcement:
-   - The decision is enforced by allowing access, denying access, or prompting for MFA.
+- Enforcement: The decision is enforced by allowing access, denying access, or prompting for MFA.
  
 ### When to Use Conditional Access:
-1. Require MFA Based on Context:
-   - Implement MFA for certain roles, locations, or network conditions.
-   - Example: Require MFA for administrators or users connecting from outside the corporate network.
- 
-2. Restrict Access to Approved Applications:
-   - Limit access to services through specific client applications.
+- Require MFA Based on Context: Implement MFA for certain roles, locations, or network conditions.
+  - Example: Require MFA for administrators or users connecting from outside the corporate network.
+
+- Restrict Access to Approved Applications: Limit access to services through specific client applications.
    - Example: Only allow certain email apps to connect to your email service.
- 
-3. Mandate Managed Devices:
-   - Ensure users access applications only from devices that meet security and compliance standards.
+
+- Mandate Managed Devices: Ensure users access applications only from devices that meet security and compliance standards.
    - Example: Require users to use managed devices for accessing sensitive applications.
- 
-4. Block Access from Untrusted Sources:
-   - Prevent access from unknown or unexpected locations to enhance security.
+
+- Block Access from Untrusted Sources: Prevent access from unknown or unexpected locations to enhance security.
    - Example: Block access attempts from high-risk geographical areas.
  
 ### Conclusion:
@@ -248,13 +233,15 @@ The Zero Trust model is a proactive security framework that verifies every acces
 
 # Defense-in-Depth Overview
  
-### Objective:
+### Objective
 The objective of defense-in-depth is to protect information and prevent unauthorized access. It employs multiple layers of security mechanisms to slow down and mitigate the impact of an attack.
  
-### Concept:
+### Concept
 Defense-in-depth can be visualized as a series of concentric layers surrounding the data to be protected. Each layer provides a distinct form of security, ensuring that if one layer is breached, the next layer continues to offer protection. This multi-layered approach reduces reliance on any single security measure, helping to slow down attacks and provide alert information for security teams to act upon.
  
-## Layers of Defense-in-Depth:
+![diagramm](../Pictures/diagramm.png) 
+
+## Layers of Defense-in-Depth
  
 1. Physical Security:
    - Role: First line of defense; protects the physical computing hardware in data centers.
@@ -298,8 +285,6 @@ Azure provides a variety of tools and features to implement security at each lay
 - Data: Encrypt data, enforce access controls, and comply with relevant regulations.
  
 By implementing these layers, organizations can create a robust security posture that significantly reduces the risk of successful attacks and helps protect their most valuable assets—data.
-
-![diagramm](../Pictures/diagramm.png)
 
 # Microsoft Defender for Cloud Summary
  

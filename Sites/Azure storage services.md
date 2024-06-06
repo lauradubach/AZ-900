@@ -19,7 +19,7 @@ An Azure Storage Account provides a unique namespace for your data by requiring 
 
 The endpoint format for Azure Storage services varies and is typically shown in a specific table format.
 
-# Describe Azure storage redundancy:
+# Describe Azure storage redundancy
 
 ## Azure Storage Redundancy Overview
 
@@ -35,10 +35,14 @@ Data in Azure Storage accounts is replicated three times in the primary region. 
    - Offers 99.999999999% (11 nines) durability.
    - Lowest cost but vulnerable to data center-wide failures.
 
+![datacenter](../Pictures/datacenter.png)
+
 2. Zone-Redundant Storage (ZRS)
    - Replicates data across three availability zones in the primary region.
    - Provides 99.9999999999% (12 nines) durability.
    - Ensures data availability even if one zone fails, suitable for high availability needs.
+
+![zone](../Pictures/zone.png)
 
 ### Secondary Region Redundancy
 For enhanced durability, data can be replicated to a secondary region hundreds of miles away, ensuring durability even in regional disasters.
@@ -48,11 +52,15 @@ For enhanced durability, data can be replicated to a secondary region hundreds o
    - Asynchronously copies data to a single location in the secondary region (LRS).
    - Provides 99.99999999999999% (16 nines) durability.
 
+![georedundant](../Pictures/georedundant.png)
+
 2. Geo-Zone-Redundant Storage (GZRS)
    - Combines ZRS in the primary region with LRS in the secondary region.
    - Ensures 99.99999999999999% (16 nines) durability, offering high availability and regional disaster protection.
 
-## Read Access to Secondary Region
+![zoneredundant](../Pictures/zoneredundant.png)
+
+### Read Access to Secondary Region
 
 For read access to data in the secondary region, Azure provides:
 
@@ -67,14 +75,6 @@ These options allow data to be read from the secondary region even when the prim
 - RPO (Recovery Point Objective): Data replication is asynchronous, with an RPO typically under 15 minutes, indicating potential data loss during primary region failures.
 
 Azure Storage redundancy options ensure data durability and availability by replicating data within and across regions, meeting diverse requirements from cost-effectiveness to high availability and disaster recovery.
-
-![datacenter](../Pictures/datacenter.png)
-
-![zone](../Pictures/zone.png)
-
-![georedundant](../Pictures/georedundant.png)
-
-![zoneredundant](../Pictures/zoneredundant.png)
 
 # Describe Azure Storage Services
 
@@ -96,7 +96,7 @@ Azure Storage provides various data services to cater to different storage needs
 - Managed: Azure handles hardware maintenance and critical updates.
 - Accessible: Accessible globally via HTTP/HTTPS, with support for various programming languages and tools.
 
-### Azure Blob Storage
+## Azure Blob Storage
 
 - Overview: Object storage for unstructured data like text, binary data, videos, and logs.
 - Access: Data is accessible worldwide via URLs, REST API, PowerShell, CLI, or client libraries.
@@ -106,9 +106,9 @@ Azure Storage provides various data services to cater to different storage needs
   - Cold: Rarely accessed (stored for at least 90 days).
   - Archive: Long-term storage with flexible latency (stored for at least 180 days).
 
-### Azure Files
+## Azure Files
 
-- Overview*: Fully managed file shares using SMB or NFS protocols.
+- Overview: Fully managed file shares using SMB or NFS protocols.
 - Key Benefits:
   - Shared access compatible with various operating systems.
   - Fully managed, eliminating the need for hardware or OS maintenance.
@@ -116,16 +116,16 @@ Azure Storage provides various data services to cater to different storage needs
   - Resilient and always available, ideal for replacing on-premises shares.
   - Familiar programmability for seamless application migration.
 
-### Azure Queues
+## Azure Queues
 
 - Overview: Service for storing and accessing large numbers of messages for asynchronous processing.
 - Use Case: Integrates with Azure Functions to trigger actions upon message receipt.
 
-### Azure Disks
+## Azure Disks
 
 - Overview: Block-level storage volumes managed by Azure for VMs, offering enhanced resiliency and availability.
 
-### Azure Tables
+## Azure Tables
 
 - Overview: NoSQL storage for large amounts of structured, non-relational data.
 - Use Case: Ideal for building hybrid or multi-cloud solutions with always-available data.
@@ -146,8 +146,8 @@ Azure Migrate is a service designed to assist with the migration from on-premise
 
 - Unified Migration Platform: A single portal for starting, running, and tracking your migration.
 - Range of Tools: Tools for assessment and migration, including:
-  - Azure Migrate: Discovery and Assessment: Discovers and assesses on-premises servers (VMware, Hyper-V, physical servers).
-  - Azure Migrate: Server Migration: Migrates VMware VMs, Hyper-V VMs, physical servers, other virtualized servers, and public cloud VMs to Azure.
+  - Discovery and Assessment: Discovers and assesses on-premises servers (VMware, Hyper-V, physical servers).
+  - Server Migration: Migrates VMware VMs, Hyper-V VMs, physical servers, other virtualized servers, and public cloud VMs to Azure.
   - Data Migration Assistant: Assesses SQL Servers for potential migration issues and benefits.
   - Azure Database Migration Service: Migrates on-premises databases to Azure SQL environments.
   - Azure App Service Migration Assistant: Assesses and migrates .NET and PHP web apps to Azure App Service.
@@ -182,7 +182,7 @@ Azure Migrate and Azure Data Box provide comprehensive tools for migrating data,
 
 Identify Azure file movement options
 
-### Azure Tools for Managing Individual Files or Small File Groups
+# Azure Tools for Managing Individual Files or Small File Groups
 
 In addition to large-scale migration services like Azure Migrate and Azure Data Box, Azure provides several tools for managing individual files or small groups of files. These tools include AzCopy, Azure Storage Explorer, and Azure File Sync.
 
@@ -192,7 +192,7 @@ AzCopy is a command-line utility for transferring files and blobs to and from Az
 
 - Capabilities: Upload, download, copy between storage accounts, and synchronize files.
 - Cross-Cloud Support: Configurable to work with other cloud providers for file transfers between clouds.
-- *One-Directional Synchronization: Synchronizes files or blobs in one direction only (from source to destination).
+- One-Directional Synchronization: Synchronizes files or blobs in one direction only (from source to destination).
 
 ## Azure Storage Explorer
 

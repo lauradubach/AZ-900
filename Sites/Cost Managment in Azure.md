@@ -1,6 +1,6 @@
 # Azure Cost Management Summary
  
-### Transition from CapEx to OpEx:
+## Transition from CapEx to OpEx:
 Azure shifts costs from capital expense (CapEx) of building and maintaining infrastructure to operational expense (OpEx) of renting infrastructure. This OpEx model is influenced by several factors:
  
 1. Resource Type:
@@ -31,7 +31,7 @@ Azure shifts costs from capital expense (CapEx) of building and maintaining infr
  
 By understanding and managing these factors, users can optimize their Azure costs and take advantage of savings opportunities.
  
-### Comparison of Azure Pricing and Total Cost of Ownership (TCO) Calculators
+## Comparison of Azure Pricing and Total Cost of Ownership (TCO) Calculators
  
 Azure provides two distinct calculators to help understand potential expenses: the Pricing Calculator and the Total Cost of Ownership (TCO) Calculator. Both tools are accessible online and allow you to build out configurations, but they serve different purposes.
  
@@ -58,7 +58,7 @@ In summary, the Pricing Calculator is best for estimating the costs of specific 
 
 ![grafik4](../Pictures/grafik4.png)
 
-# Microsoft Cost Management Tool Overview
+## Microsoft Cost Management Tool Overview
  
 Microsoft Cost Management is a service designed to help Azure users effectively monitor and manage their cloud spending. It offers several key features to help users understand and control their costs.
  
@@ -80,7 +80,7 @@ Budgets:
  
 In summary, Microsoft Cost Management provides users with tools to monitor, analyze, and control their Azure spending effectively, helping them avoid unexpected costs and stay within budget.
  
-### Purpose of Tags Overview
+## Purpose of Tags Overview
  
 Tags are metadata labels that provide additional information about resources in Azure. They serve various purposes aimed at organization, cost management, operations management, security, governance, workload optimization, and automation.
  

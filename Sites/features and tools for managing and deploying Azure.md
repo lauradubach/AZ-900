@@ -1,4 +1,4 @@
-# Tools for Interacting with Azure:
+# Tools for Interacting with Azure
  
 Azure offers multiple tools for managing your environment, including:
  
@@ -12,7 +12,7 @@ Azure offers multiple tools for managing your environment, including:
  
 Users can choose between PowerShell and CLI based on their familiarity with the respective syntax and language, as both offer similar functionalities for managing Azure resources.
  
-# Purpose of Azure Arc:
+# Purpose of Azure Arc
  
 Azure Arc addresses the complexity of managing hybrid and multi-cloud environments by extending Azure's capabilities to non-Azure resources. It enables organizations to:
  
@@ -26,12 +26,12 @@ Azure Arc addresses the complexity of managing hybrid and multi-cloud environmen
  
 5. Custom Locations: It allows the configuration of custom locations as an abstraction layer for Azure Arc-enabled Kubernetes clusters and cluster extensions, providing flexibility in managing resources.
  
-6. Resource Management*: Azure Arc currently supports the management of servers, Kubernetes clusters, Azure data services, SQL Server, and virtual machines (in preview) hosted outside of Azure.
+6. Resource Management: Azure Arc currently supports the management of servers, Kubernetes clusters, Azure data services, SQL Server, and virtual machines (in preview) hosted outside of Azure.
  
  
-# Azure Resource Manager (ARM) and ARM Templates:
+# Azure Resource Manager (ARM) and ARM Templates
  
-### Azure Resource Manager (ARM):
+## Azure Resource Manager (ARM)
 Azure Resource Manager (ARM) is the deployment and management service for Azure, providing a management layer for creating, updating, and deleting resources in Azure accounts. It handles requests from various Azure tools, APIs, or SDKs, ensuring consistent results across different tools through the same API.
  
 Benefits of Azure Resource Manager:
@@ -45,11 +45,11 @@ Benefits of Azure Resource Manager:
 ARM templates are JSON files describing Azure resources to deploy, defining the desired state and configuration of each resource. They are verified before deployment, ensuring correct resource creation and connection. ARM templates orchestrate resource creation in parallel, making deployment efficient and repeatable.
  
 Benefits of ARM Templates:
-- **Declarative Syntax:** Define infrastructure and deployments without writing actual programming commands.
-- **Repeatable Results:** Deploy infrastructure consistently across different environments.
-- **Orchestration:** Handle complexities of deployment order and parallel operations automatically.
-- **Modular Files:** Break templates into reusable components and link them for simplified deployment.
-- **Extensibility:** Include PowerShell or Bash scripts for additional setup during deployment.
+- Declarative Syntax: Define infrastructure and deployments without writing actual programming commands.
+- Repeatable Results: Deploy infrastructure consistently across different environments.
+- Orchestration: Handle complexities of deployment order and parallel operations automatically.
+- Modular Files: Break templates into reusable components and link them for simplified deployment.
+- Extensibility: Include PowerShell or Bash scripts for additional setup during deployment.
  
-### Bicep:
+## Bicep:
 Bicep is a language that simplifies Azure resource deployment using declarative syntax similar to ARM templates but with a more concise style. It supports all resource types and API versions, provides simpler syntax for easier readability, ensures repeatable results, and offers modularity for better code organization.

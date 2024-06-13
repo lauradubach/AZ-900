@@ -1,8 +1,8 @@
-#Azure Advisor:
+# Azure Advisor:
  
 Azure Advisor is a service that evaluates Azure resources to provide recommendations for enhancing reliability, security, performance, operational excellence, and cost optimization. It aims to streamline cloud optimization efforts and offers actionable suggestions that users can implement immediately, postpone, or dismiss.
  
-Key Features:
+## Key Features:
 - Recommendations: Azure Advisor offers personalized recommendations through the Azure portal and API, covering various aspects like reliability, security, performance, operational excellence, and cost optimization.
 - Dashboard: Users can access recommendations via the Azure portal's Advisor dashboard, where suggestions are categorized based on their relevance to specific subscriptions, resource groups, or services.
 - Categories: Recommendations are divided into five categories:
